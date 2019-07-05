@@ -181,7 +181,7 @@ func main() {
 			// Sys: sysproc,
 		}
 		if pid > 0 {
-			process, err := os.StartProcess("/usr/libexec/oci/hooks.d/trace", []string{"/usr/libexec/oci/hooks.d/trace", "-r", strconv.Itoa(pid)}, attr)
+			process, err := os.StartProcess("/usr/libexec/oci/hooks.d/oci-trace-hook", []string{"/usr/libexec/oci/hooks.d/trace", "-r", strconv.Itoa(pid)}, attr)
 			if err != nil {
 				log.Println("cannot launch process ", err.Error())
 				return
