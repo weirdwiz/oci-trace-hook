@@ -143,7 +143,7 @@ func main() {
 		<-sig
 		log.Println("PerfMap Stop")
 		perfMap.Stop()
-		generateProfile(syscalls, "/home/weirdwiz/profile.json")
+		generateProfile(syscalls, os.TempDir()+"/profile.json")
 	} else if *terminate {
 		log.Println("terminator")
 		f, err := ioutil.ReadFile("pid")

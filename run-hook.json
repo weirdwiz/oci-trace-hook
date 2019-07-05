@@ -1,0 +1,12 @@
+{
+	"version":"1.0.0",
+    "hook":{
+	   "path" :"/usr/libexec/oci/hooks.d/trace"
+    },
+    "when":{
+	    "annotations":{
+		    "seccomp":"true"
+	    }
+    },
+    "stages":["prestart"]
+}
