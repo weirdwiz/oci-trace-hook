@@ -8,6 +8,6 @@ Can only be run as root or with `CAP_SYS_ADMIN`
 - gobpf
 
 ## Build
--`go build`
+- `go build`
 - copy the binary to `/usr/libexec/oci/hook.d/`
--`sudo podman run [FLAGS] --annotation seccomp=true [IMAGE] [COMMAND]`
+- `sudo podman run [FLAGS] --annotation seccomp=true [IMAGE] [COMMAND]`
